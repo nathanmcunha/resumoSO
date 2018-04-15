@@ -51,7 +51,7 @@
 	 	* RETOMAR LEITURA 
 
 ### Threads 
-	* Ambiente MonoThread -> Um processo só suporta apenas um programa no seu espaço de endereçamento, 
+* Ambiente MonoThread -> Um processo só suporta apenas um programa no seu espaço de endereçamento, 
 		* Aplicações concorrentes nesse tipo de ambiente somente com processos independentes e subprocessos.
 		* Como cada processo possui seu proprio espaço de endereçamento , isso dificulta a comunicaçao e se torna muito lenta, pois utiliza-se 
 		  pipes, sinais e semaforos e memoria compartilhada ou troca de mensagens.
