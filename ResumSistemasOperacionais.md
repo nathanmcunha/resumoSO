@@ -50,3 +50,35 @@
 	* Sinais -> Sinais permite notificar processos de eventos gerados pelo SO ou por outros processos, além de sincronizar e permitir a comunicação entre eles.
 	 	* RETOMAR LEITURA 
 
+### Threads 
+	* Ambiente MonoThread -> Um processo só suporta apenas um programa no seu espaço de endereçamento, 
+		* Aplicações concorrentes nesse tipo de ambiente somente com processos independentes e subprocessos.
+		* Como cada processo possui seu proprio espaço de endereçamento , isso dificulta a comunicaçao e se torna muito lenta, pois utiliza-se 
+		  pipes, sinais e semaforos e memoria compartilhada ou troca de mensagens.
+	* Ambiente MultiThread 
+		* Programas associados a threads 
+		* Espaço de endereçamento compartilhado com outras threads 
+		* Vantagens de multithread é minimizar a alocação de recursos do sistema , além de diminuir o overhead na criação,troca e eliminação de 
+		  processos.
+		* Dentro de hm mesmo processo as Threads compartilham o mesmo contexto de software e espaço de endereçamento, mas cada thread possui seu proprio  
+		   contexto de hardware,e algumas outras informações como estado,prioridade e bits de estado.
+		* Grande diferença entre os ambientes monothread é o espaço de endereçamento,essa caracteristica permite que o compartilhamento de dados entre threads
+		  de um mesmo processo seja mais simples e rápido se comparado com ambientes monothread.
+		* Como threads compartilham o mesmo espaço de endereçamento, não existe proteção no acesso a memoria, ou seja threads do mesmo processo podem alterar
+		  dados de outros. 
+		* Para que não se tenha problemas e as threads trabalhem de forma cooperativa , é fundamental que seja implementado na aplicação os  
+		  mecanismos de comunicação e sincronizção, com a finalidade de garantir acesso seguro aos dados e sua integridade.
+		* Facilidade na hora de compartilhar outros recursos.
+		* Threds em ambientes cliente servidor-> 
+		* Thread modo usuario (TMU)-> 
+			* Implementados pela aplicação ou seja o SO não sabe que a aplicação é multithread. 
+			* Necessita de uma biblioteca para implementação de sincronização, escalonamento e comunicação entre threads.
+			* Pode ser utilizado em sistemas que não suportam multithread.
+			* São mais rapidos e eficientes pois não precisam fazer a mudança de modo de acesso, no caso modo-kernel.
+			* Desvantagens , caso uma threads esteja esperando um recurso e vai pro estado de wait todo o processo fica travado, mesmo 
+			  que tenham threads no estado de pronto.Para contornar esse problema a biblioteca deve possuir rotinas que que substituiam as  	
+			  rotinas bloqueantes. 
+		* Thread modo kernel (TMK)->
+			*
+		* Thread modo hibrido->
+			* FOCAR
