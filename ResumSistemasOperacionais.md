@@ -20,7 +20,7 @@
   * Funções x System Call 
        
 ### Processos  
-  * PC - Guarda o endereço da proxima instrução a ser executada  
+  *PC - Guarda o endereço da proxima instrução a ser executada  
   * Sistemas Multiusuáio cada usuário tem seu programa associado a um process o
   * Partes de um processo
 	* Desenho estrutura de um processo 
