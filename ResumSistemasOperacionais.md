@@ -50,6 +50,10 @@
 	* Sinais -> Sinais permite notificar processos de eventos gerados pelo SO ou por outros processos, além de sincronizar e permitir a comunicação entre eles.
 	 	* RETOMAR LEITURA 
 
+	![Estrutura Processo](/img/estru_proc.jpg)
+	![PCB](/img/pcb.jpg)	
+
+
 ### Threads 
 * Ambiente MonoThread -> Um processo só suporta apenas um programa no seu espaço de endereçamento, 
 		* Aplicações concorrentes nesse tipo de ambiente somente com processos independentes e subprocessos.
@@ -85,3 +89,6 @@
 			  várias mudanças de acesso 
 		* Thread modo hibrido->
 			* 
+
+		![TCB](/img/tcb.jpg)
+
