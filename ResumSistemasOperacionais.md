@@ -79,6 +79,9 @@
 			  que tenham threads no estado de pronto.Para contornar esse problema a biblioteca deve possuir rotinas que que substituiam as  	
 			  rotinas bloqueantes. 
 		* Thread modo kernel (TMK)->
-			*
+			* São Implementados diretamente pelo kernel do SO , através de chamadas das rotinas do sistema  que oferecem todas as funcoes de  
+				gerenciamento e sincronização. O SO sabe da existencia de todas as threads e pode escalona-los de forma individual. 
+			* O grande problemas das TMK são seu baixo desempenho , threads TMK fazem as chamadas a rotinas do sistema, consequentemente ocorrem  
+			  várias mudanças de acesso 
 		* Thread modo hibrido->
-			* FOCAR
+			* 
